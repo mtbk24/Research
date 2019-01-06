@@ -1,12 +1,8 @@
-In the majority of my research, I need to log (base 10) my data and the margins of error on that data. 
+In the majority of my research, I need to log (base 10) my data and the margins of error on that data. In addition, most of my data sets have asymmetric errors and logging this data properly has become a pain. I wrote a function to return properly logged values and their margins of error in the file: loggeddata.py
 
-You CAN NOT log the margins of error. 
-You MUST find the confidence intervals (lower and upper) and then log those and then take the difference between the logged x and y values and their respective logged upper and lower confidence intervals. 
+You CAN NOT log margins of error -- you MUST log confidence intervals!!
 
-To see how this is done, see loggeddata.py
-
-Most of our data sets have asymmetric errors and logging the data has become a pain. This function is useful anytime the logged data is needed. 
-
+Other files:
 testing_loggingdata.ipynb
  - Uses this function to log the data. Also shows some plots. 
  
